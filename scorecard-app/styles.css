@@ -1,0 +1,161 @@
+/* =========================
+   CSS RESET (Modern)
+   ========================= */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+}
+
+/* Remove default link styles */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Images responsive by default */
+img, picture, video, canvas {
+  max-width: 100%;
+  display: block;
+}
+
+/* =========================
+   ROOT VARIABLES
+   ========================= */
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e293b;
+  --accent-color: #f59e0b;
+
+  --text-color: #000000;
+  --bg-color: #155843;
+
+  --font-main: system-ui, -apple-system, sans-serif;
+
+  --max-width: 1100px;
+}
+
+/* =========================
+   BASE STYLES
+   ========================= */
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+h1, h2, h3, h4 {
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+/* =========================
+   LAYOUT
+   ========================= */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  gap: 1rem;
+  flex: 1; /* pushes footer down */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.button-box {
+  display: flex; 
+  flex-direction: column; 
+  width: 100%; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 20px
+}
+
+@media (min-width: 768px) {
+  .button-box {
+    flex-direction: row; /* desktop */
+  }
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+  padding: 1rem 0;
+    display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+.button {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: 5px;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background-color: #1d4ed8;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+}
