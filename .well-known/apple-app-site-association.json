@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "R9B6UZYCN9.com.runtsapp.myapp",
+        "paths": ["/runts/*"]
+      },
+      {
+        "appID": "R9B6UZYCN9.com.runtsapp.myapp.staging",
+        "paths": ["/runts/*"]
+      },
+      {
+        "appID": "R9B6UZYCN9.com.runtsapp.myapp.dev",
+        "paths": ["/runts/*"]
+      }
+    ]
+  }
+}
