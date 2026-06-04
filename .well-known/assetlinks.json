@@ -1,0 +1,32 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.runtsapp.myapp.dev",
+      "sha256_cert_fingerprints": [
+        "29:A9:25:6F:77:75:70:8E:88:76:67:75:76:70:4A:BC:CC:32:00:80:86:90:A0:1A:13:41:E8:7A:9C:E0:70:F4"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.runtsapp.myapp.staging",
+      "sha256_cert_fingerprints": [
+        "ADD_STAGING_SHA256_HERE"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.runtsapp.myapp",
+      "sha256_cert_fingerprints": [
+        "ADD_PRODUCTION_SHA256_HERE"
+      ]
+    }
+  }
+]
