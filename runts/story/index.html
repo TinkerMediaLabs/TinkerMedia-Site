@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Runts — Short Stories</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #0a0a0a;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 42px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: #00ffff;
+      margin-bottom: 8px;
+    }
+
+    .tagline {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 48px;
+      letter-spacing: 0.3px;
+    }
+
+    .card {
+      background: #161616;
+      border: 1px solid #2a2a2a;
+      border-radius: 20px;
+      padding: 32px 28px;
+      max-width: 400px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
+    .card-icon {
+      font-size: 40px;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .card-body {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 1.6;
+    }
+
+    .download-section {
+      margin-top: 16px;
+    }
+
+    .download-label {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.35);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 16px;
+    }
+
+    .store-buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 12px 20px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: border-color 0.2s;
+    }
+
+    .store-btn:hover {
+      border-color: #00ffff;
+    }
+
+    .store-btn.coming-soon {
+      opacity: 0.45;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.2);
+      margin-top: 40px;
+    }
+
+    .footer a {
+      color: rgba(255, 255, 255, 0.3);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">runts</div>
+  <div class="tagline">Short stories for your commute.</div>
+
+  <div class="card">
+    <div class="card-icon">🎧</div>
+    <div class="card-title">Open this story in Runts</div>
+    <div class="card-body">
+      Download the Runts app to listen to short stories
+      wherever you are — no subscription required.
+    </div>
+
+    <div class="download-section">
+      <div class="download-label">Download the app</div>
+      <div class="store-buttons">
+        <!-- Replace href values with real App Store / Play Store links when live -->
+        <a class="store-btn coming-soon" href="#">
+          🍎 App Store
+        </a>
+        <a class="store-btn coming-soon" href="#">
+          ▶ Google Play
+        </a>
+      </div>
+      <p style="font-size:12px; color:rgba(255,255,255,0.25); margin-top:14px;">
+        Coming soon to iOS and Android
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    A <a href="https://tinkermedia.net">TinkerMedia</a> app &nbsp;·&nbsp;
+    <a href="https://tinkermedia.net/Runts/privacy-policy">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="https://tinkermedia.net/Runts/terms">Terms</a>
+  </div>
+
+</body>
+</html>
