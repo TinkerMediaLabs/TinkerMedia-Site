@@ -3,75 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <title>TinkerMedia</title>
+  <meta name="description" content="TinkerMedia is a small studio building simple, useful apps." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body class="body">
+<body>
 
   <!-- HEADER -->
   <header class="header">
     <div class="container nav">
-      <h1 class="logo">Tinker Media LLC</h1>
-      <nav>
-        <a href="#">About</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <!-- <a href="#" class="button">Contact</a> -->
-      </nav>
+      <a href="./" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <rect x="4" y="4" width="16" height="16" rx="5" fill="#eafff4" opacity="0.9" />
+            <rect x="12" y="12" width="16" height="16" rx="5" fill="#34d399" />
+          </svg>
+        </span>
+        <span class="brand-name">TinkerMedia</span>
+      </a>
+      <a class="contact-link" href="mailto:admin@tinkermedia.net">Contact</a>
     </div>
   </header>
 
   <!-- HERO -->
-  <div class="app-box">
-    <a href="/runts" class="hero runts runts-text runts-text-2">
-      <section>
-      <div class="container hero-content">
-        <h2>Runts: Audio Short Stories</h2>
-        <!-- <p>We help businesses grow with modern, effective solutions.</p> -->
-      </div>
-     </section>
-    </a>
-    
-
-    <a href="/scorecard-app" class="hero scorecard">
-      <section>
-      <div class="container hero-content">
-        <h2>Simple Universal Scorecard</h2>
-        <!-- <p>We help businesses grow with modern, effective solutions.</p> -->
-      </div>
-      </section>
-    </a>
-  </div>
-
-
-  <!-- FEATURES -->
-  <!-- <section class="features container">
-    <div class="feature">
-      <h3>Fast</h3>
-      <p>Optimized for performance and speed.</p>
+  <section class="hero">
+    <div class="container hero-content">
+      <p class="eyebrow">Software Studio</p>
+      <h1>We build small,<br />useful apps.</h1>
+      <p class="lede">TinkerMedia is a small studio focused on making things people actually reach for &mdash; simple tools, done well, with no clutter.</p>
     </div>
-    <div class="feature">
-      <h3>Reliable</h3>
-      <p>Built with best practices and stability.</p>
-    </div>
-    <div class="feature">
-      <h3>Modern</h3>
-      <p>Clean design that looks great everywhere.</p>
-    </div>
-  </section> -->
+  </section>
 
-  <!-- CTA -->
-  <!-- <section class="cta">
+  <!-- APPS -->
+  <section class="apps">
     <div class="container">
-      <h2>Ready to grow your business?</h2>
-      <a href="#" class="button">Contact Us</a>
+      <p class="section-label">Our Apps</p>
+
+      <div class="apps-grid">
+        <a href="scorecard-app/" class="app-card">
+          <div class="app-card-top">
+            <img src="./assets/rooky-icon.png" alt="Rooky app icon" class="app-icon" />
+            <span class="app-card-arrow" aria-hidden="true">&rarr;</span>
+          </div>
+          <h2>Rooky</h2>
+          <p class="app-card-tagline">Universal Scorecard</p>
+          <p class="app-card-copy">One simple scorecard for any game &mdash; customize the rules, choose a theme, and start playing.</p>
+        </a>
+
+        <a href="runts-app/" class="app-card">
+          <div class="app-card-top">
+            <img src="./assets/runts-icon.png" alt="Runts app icon" class="app-icon" />
+            <span class="app-card-arrow" aria-hidden="true">&rarr;</span>
+          </div>
+          <h2>Runts</h2>
+          <p class="app-card-tagline">Coming soon</p>
+          <p class="app-card-copy">More on this one soon.</p>
+        </a>
+      </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 TinkerMedia, LLC</p>
+    <div class="container footer-content">
+      <p class="footer-muted">&copy; 2026 TinkerMedia, LLC</p>
+      <a class="footer-muted footer-link" href="mailto:admin@tinkermedia.net">admin@tinkermedia.net</a>
+    </div>
   </footer>
 
 </body>
