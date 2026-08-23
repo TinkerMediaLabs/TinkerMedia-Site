@@ -110,28 +110,8 @@ p {
 .header .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 16px;
-}
-
-.logo-mark {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
-  display: block;
-}
-
-.logo-text {
-  font-family: var(--font-display);
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--green);
 }
 
 .header nav {
@@ -166,6 +146,19 @@ p {
 .hero-copy {
   flex: 1 1 420px;
   min-width: 300px;
+}
+
+.wordmark-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.wordmark-icon {
+  width: clamp(40px, 6vw, 56px);
+  height: clamp(40px, 6vw, 56px);
+  border-radius: 14px;
+  flex-shrink: 0;
 }
 
 .wordmark {
@@ -251,9 +244,20 @@ p {
   filter: drop-shadow(0 20px 40px rgba(16, 61, 47, 0.28));
 }
 
+/* Fixed-height box so the three screenshots line up visually even
+   though the source PNGs (with baked-in phone borders) don't share
+   the same aspect ratio. Each image scales to fit inside the box. */
+.showcase-screenshot-wrap {
+  height: clamp(280px, 34vw, 380px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
 .showcase-screenshot {
-  width: 210px;
-  max-width: 70vw;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
   height: auto;
   margin: 0 auto;
   filter: drop-shadow(0 16px 32px rgba(16, 61, 47, 0.2));
@@ -404,6 +408,10 @@ p {
   .hero-copy .lede {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .wordmark-row {
+    justify-content: center;
   }
 
   .button-box {
