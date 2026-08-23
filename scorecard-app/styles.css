@@ -115,8 +115,21 @@ p {
 }
 
 .logo-mark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: block;
+}
+
+.logo-text {
   font-family: var(--font-display);
-  font-size: clamp(22px, 4vw, 30px);
+  font-size: 18px;
   font-weight: 700;
   color: var(--green);
 }
@@ -225,46 +238,25 @@ p {
 }
 
 /* =========================
-   PHONE FRAME
+   SCREENSHOTS
+   (images already include their own phone-frame artwork —
+   these classes just size/shadow them, no drawn bezel here)
    ========================= */
-.phone-frame {
+.hero-screenshot {
   position: relative;
   z-index: 2;
-  background: #111;
-  border-radius: 42px;
-  padding: 14px;
-  box-shadow: 0 30px 60px rgba(16, 61, 47, 0.25);
-}
-
-.phone-frame::before {
-  content: '';
-  position: absolute;
-  top: 14px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90px;
-  height: 22px;
-  background: #111;
-  border-radius: 14px;
-  z-index: 3;
-}
-
-.phone-frame img {
-  border-radius: 30px;
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.phone-frame--hero {
   width: 270px;
   max-width: 78vw;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(16, 61, 47, 0.28));
 }
 
-.phone-frame--showcase {
+.showcase-screenshot {
   width: 210px;
   max-width: 70vw;
+  height: auto;
   margin: 0 auto;
+  filter: drop-shadow(0 16px 32px rgba(16, 61, 47, 0.2));
 }
 
 /* =========================
@@ -347,61 +339,9 @@ p {
   font-size: 14px;
   max-width: 240px;
   margin: 0 auto 24px;
-}
-
-/* =========================
-   CTA
-   ========================= */
-.cta {
-  padding: 0 24px 80px;
-}
-
-.cta-card {
-  background: var(--mint-light);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  padding: 32px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.cta-left {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.cta-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
-  background: var(--green);
-  color: #ffffff;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 26px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.cta-left h2 {
-  color: var(--green);
-  font-size: 22px;
-  margin-bottom: 2px;
-}
-
-.cta-left p {
-  font-size: 14px;
-  color: var(--text-muted);
-}
-
-.button-box--cta {
-  margin-bottom: 0;
+  /* Reserves a consistent 2-line height regardless of how much text each
+     item has, so the screenshots below stay aligned across all 3 columns. */
+  min-height: 3.2em;
 }
 
 /* =========================
@@ -474,20 +414,6 @@ p {
   .showcase-grid {
     grid-template-columns: 1fr;
     gap: 48px;
-  }
-
-  .cta-card {
-    justify-content: center;
-    text-align: center;
-  }
-
-  .cta-left {
-    flex-direction: column;
-  }
-
-  .button-box--cta {
-    justify-content: center;
-    width: 100%;
   }
 
   .footer-content {
