@@ -13,11 +13,16 @@ html, body {
   height: 100%;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 ul, ol {
@@ -115,12 +120,13 @@ p {
 .header .nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 16px;
 }
 
 .header nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -160,9 +166,9 @@ p {
 }
 
 .wordmark-icon {
-  width: clamp(140px, 6vw, 56px);
-  height: clamp(140px, 6vw, 56px);
-  border-radius: 14px;
+  width: 140px;
+  height: 140px;
+  border-radius: 32px;
   flex-shrink: 0;
 }
 
@@ -221,8 +227,8 @@ p {
 
 .hero-blob {
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: min(400px, 85vw);
+  height: min(400px, 85vw);
   border-radius: 50%;
   background: radial-gradient(circle, var(--mint) 0%, var(--mint-light) 55%, transparent 72%);
   z-index: 0;
@@ -322,6 +328,7 @@ p {
   font-family: var(--font-display);
   font-size: clamp(24px, 3vw, 30px);
   margin-bottom: 56px;
+  flex-wrap: wrap;
 }
 
 .showcase-heading .rule {
@@ -384,6 +391,7 @@ p {
 .footer-nav {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   color: #ffffff;
   font-size: 13px;
@@ -402,7 +410,7 @@ p {
 }
 
 /* =========================
-   RESPONSIVE
+   RESPONSIVE — TABLET / STACKED (<=860px)
    ========================= */
 @media (max-width: 860px) {
   .hero-content {
@@ -416,7 +424,16 @@ p {
   }
 
   .wordmark-row {
+    flex-direction: column-reverse;
     justify-content: center;
+    gap: 16px;
+  }
+
+  .hero-art {
+    width: 100%;
+    flex-basis: auto;
+    min-height: 0;
+    padding: 24px 0 8px;
   }
 
   .button-box {
@@ -432,5 +449,71 @@ p {
   .footer-content {
     flex-direction: column;
     text-align: center;
+  }
+}
+
+/* =========================
+   RESPONSIVE — SMALL PHONES (<=480px)
+   ========================= */
+@media (max-width: 480px) {
+  .container-wide {
+    padding: 0 18px;
+  }
+
+  .header {
+    padding: 16px 0;
+  }
+
+  .header nav {
+    gap: 16px;
+  }
+
+  .header nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    padding: 24px 0 56px;
+  }
+
+  .hero-copy h1 {
+    margin-bottom: 14px;
+  }
+
+  .hero-copy .lede {
+    margin-bottom: 22px;
+  }
+
+  .store-badge {
+    width: 130px;
+  }
+
+  .store-badge-play {
+    width: 138px;
+  }
+
+  .hero-screenshot {
+    width: 220px;
+  }
+
+  .features {
+    padding: 48px 0;
+  }
+
+  .showcase {
+    padding: 56px 0;
+  }
+
+  .showcase-heading {
+    margin-bottom: 40px;
+    gap: 12px;
+  }
+
+  .showcase-screenshot-wrap {
+    height: 260px;
+  }
+
+  .showcase-grid {
+    gap: 40px;
   }
 }
