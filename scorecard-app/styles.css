@@ -96,6 +96,11 @@ p {
   height: auto;
 }
 
+.store-badge-play {
+  width: 164px;
+  height: auto;
+}
+
 .store-badge--small {
   width: 140px;
 }
