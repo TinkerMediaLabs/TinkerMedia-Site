@@ -160,8 +160,8 @@ p {
 }
 
 .wordmark-icon {
-  width: clamp(160px, 6vw, 56px);
-  height: clamp(160px, 6vw, 56px);
+  width: clamp(140px, 6vw, 56px);
+  height: clamp(140px, 6vw, 56px);
   border-radius: 14px;
   flex-shrink: 0;
 }
