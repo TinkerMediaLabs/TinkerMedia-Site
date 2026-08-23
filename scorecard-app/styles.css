@@ -97,7 +97,7 @@ p {
 }
 
 .store-badge-play {
-  width: 164px;
+  width: 166px;
   height: auto;
 }
 
@@ -160,8 +160,8 @@ p {
 }
 
 .wordmark-icon {
-  width: clamp(80px, 6vw, 56px);
-  height: clamp(80px, 6vw, 56px);
+  width: clamp(160px, 6vw, 56px);
+  height: clamp(160px, 6vw, 56px);
   border-radius: 14px;
   flex-shrink: 0;
 }
