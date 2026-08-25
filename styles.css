@@ -125,6 +125,7 @@ p {
 
 .hero-content {
   max-width: 620px;
+  text-align: center;
 }
 
 .eyebrow {
@@ -145,6 +146,7 @@ p {
 .hero .lede {
   font-size: 17px;
   max-width: 480px;
+  margin: 0 auto; /* the lede is narrower than the h1, so it needs its own centering */
 }
 
 /* =========================

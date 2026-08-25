@@ -131,7 +131,7 @@ p {
 }
 
 .header nav a {
-  color: var(--green);
+  color: var(--text);
   font-weight: 500;
   font-size: 14px;
 }
@@ -163,11 +163,16 @@ p {
   display: flex;
   align-items: center;
   gap: 14px;
+  margin-bottom: 20px;
+}
+
+.wordmark-row .eyebrow {
+  margin: 4px 0 0;
 }
 
 .wordmark-icon {
-  width: 140px;
-  height: 140px;
+  width: 132px;
+  height: 132px;
   border-radius: 32px;
   flex-shrink: 0;
 }
@@ -185,7 +190,7 @@ p {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--green);
+  color: var(--text);
   margin: 10px 0 24px;
 }
 
