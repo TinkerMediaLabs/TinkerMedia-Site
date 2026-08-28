@@ -1,0 +1,230 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.7;
+  padding: 40px 20px 80px;
+}
+
+.container {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* ── Logo ─────────────────────────────────────────────────────────────────── */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 48px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00ffff;
+  letter-spacing: 0.3px;
+}
+
+.logo-sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ── Typography ───────────────────────────────────────────────────────────── */
+
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 40px 0 12px;
+}
+
+p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 16px;
+}
+
+.lead {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 48px;
+  line-height: 1.7;
+}
+
+strong {
+  color: #fff;
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+
+li {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 8px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #2a2a2a;
+  margin: 40px 0;
+}
+
+/* ── Card ─────────────────────────────────────────────────────────────────── */
+
+.card {
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 14px;
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.card-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #00ffff;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 16px;
+}
+
+/* ── Steps ────────────────────────────────────────────────────────────────── */
+
+.step {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  align-items: flex-start;
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.3);
+  color: #00ffff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.step-text {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+  padding-top: 4px;
+}
+
+/* ── Table ────────────────────────────────────────────────────────────────── */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 24px;
+}
+
+th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+td {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 12px;
+  border-bottom: 1px solid #1a1a1a;
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* ── Badges ───────────────────────────────────────────────────────────────── */
+
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.badge-red {
+  background: rgba(255, 80, 80, 0.12);
+  color: #ff5050;
+}
+
+.badge-green {
+  background: rgba(0, 200, 100, 0.12);
+  color: #00c864;
+}
+
+.badge-gray {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── Links ────────────────────────────────────────────────────────────────── */
+
+.email-link {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  opacity: 0.8;
+}
+
+/* ── Support note ─────────────────────────────────────────────────────────── */
+
+.support-note {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────────── */
+
+footer {
+  margin-top: 64px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
