@@ -159,3 +159,31 @@ footer {
   text-align: center;
   padding: 1rem;
 }
+
+/* =========================
+   ABOUT + SMALL TEXT
+   ========================= */
+.coming-soon {
+  font-size: 1.1rem;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.about {
+  padding: 2rem 0 1rem;
+}
+
+.about-content {
+  max-width: 700px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.about-content h2 {
+  font-size: 1.5rem;
+}
+
+.inline-link {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
