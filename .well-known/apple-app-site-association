@@ -4,15 +4,15 @@
     "details": [
       {
         "appID": "R9B6UZYCN9.com.runtsapp.myapp",
-        "paths": ["/runts/*"]
+        "paths": ["/runts/*", "/story/*"]
       },
       {
         "appID": "R9B6UZYCN9.com.runtsapp.myapp.staging",
-        "paths": ["/runts/*"]
+        "paths": ["/runts/*", "/story/*"]
       },
       {
         "appID": "R9B6UZYCN9.com.runtsapp.myapp.dev",
-        "paths": ["/runts/*"]
+        "paths": ["/runts/*", "/story/*"]
       }
     ]
   }
