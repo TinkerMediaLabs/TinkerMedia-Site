@@ -15,7 +15,7 @@
       "namespace": "android_app",
       "package_name": "com.runtsapp.myapp.staging",
       "sha256_cert_fingerprints": [
-        "ADD_STAGING_SHA256_HERE"
+        "CC:6C:8A:D7:3F:7E:79:56:13:35:E0:EF:45:E8:78:E2:C2:A6:83:1F:51:1C:21:AF:0C:83:80:F6:06:32:41:CC"
       ]
     }
   },
